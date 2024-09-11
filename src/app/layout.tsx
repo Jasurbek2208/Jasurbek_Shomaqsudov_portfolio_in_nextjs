@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   applicationName: 'shomaqsudov.uz',
   authors: { name: 'Jasurbek Shomaqsudov', url: 'https://shomaqsudov.uz' },
-  category: ['programming', 'sofware engineering', 'portfolio'],
+  // category: ['programming', 'sofware engineering', 'portfolio'],
   twitter: {
     title: 'Jasurbek Shomaqsudov - Software Engineer',
     description: 'Jasurbek Shomaqsudov is a front-end developer who creates responsive and user-friendly websites. See my portfolio and learn more about my skills, experience.',
@@ -43,144 +43,8 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <head>
-        {/* <!-- Add more SEO-friendly meta tags --> */}
-        <meta name='robots' content='index, follow' />
-        {/* <!-- Allow indexing and following --> */}
-        <meta name='googlebot' content='index, follow' />
-        {/* <!-- Googlebot instructions --> */}
-        <meta name='bingbot' content='index, follow' />
-        {/* <!-- Bingbot instructions --> */}
-        <meta name='apple-mobile-web-app-title' content='shomaqsudov.uz' />
-        {/* <!-- Apple app title --> */}
-        <meta name='application-name' content='shomaqsudov.uz' />
-        {/* <!-- Windows app title --> */}
-
-        {/* <!-- SEO Metadata --> */}
-        <meta name='author' content='Shomaqsudov.uz' />
-        <meta name='copyright' content='© 2024-2025 ООО «Shomaqsudov.uz»' />
-        <meta name='language' content='Uzbek, Russian, English' />
-        <meta name='google' content='translate' />
-        <meta name='revisit-after' content='7 days' />
-        {/* <!-- Suggests search engines revisit your site after a certain period --> */}
-        <meta name='distribution' content='global' />
-        {/* <!-- Indicates global distribution of your content --> */}
-
-        {/* <!-- IOS meta tags & icons --> */}
-        <meta name='apple-mobile-web-app-capable' content='yes' />
-        <meta name='apple-mobile-web-app-status-bar-style' content='black' />
-        <meta name='apple-mobile-web-app-title' content='Jasurbek Shomaqsudov - Software Engineer' />
-        <meta name='apple-touch-icon' content='https://shomaqsudov.uz/logo.webp' />
-
-        {/* <!-- Geo-specific meta tags --> */}
-        <meta name='geo.region' content='UZ' />
-        <meta name='geo.region' content='RU' />
-        <meta name='geo.region' content='EN' />
-        <meta name='geo.placename' content='Tashkent' />
-        <meta name='geo.position' content='41.3520628,69.2760159' />
-
-        {/* <!-- Social Media Metadata --> */}
-        {/* <!-- Open Graph Protocol (OGP) --> */}
-        <meta property='og:locale' content='uz_UZ' />
-        <meta property='og:locale' content='ru_RU' />
-        <meta property='og:locale' content='en_US' />
-        <meta property='og:type' content='website' />
-        <meta property='og:title' content='Jasurbek Shomaqsudov - Software Engineer' />
-        <meta property='og:locale:alternate' content='uz_UZ' />
-        <meta property='og:locale:alternate' content='ru_RU' />
-        <meta property='og:locale:alternate' content='en_US' />
-        <meta property='og:site_name' content='shomaqsudov.uz' />
-        <meta property='article:section' content='Technology' />
-        <meta property='article:modified_time' content='2024-03-30T14:30:00Z' />
-        <meta property='article:published_time' content='2024-03-30T15:00:00Z' />
-        <meta property='og:image' content='https://shomaqsudov.uz/banner.webp' />
-        <meta property='og:url' content='https://shomaqsudov.uz' />
-        <meta
-          property='article:tag'
-          content="Jasurbek Shomaqsudov, jasurbek shomaqsudov, Shomaqsudov Jasurbek, shomaqsudov jasurbek, shomaqsudov jasurbek frontend, shomaqsudov Jasurbek, shomaqsudov jasur, shomaqsudov, jasurShomaqsudov, JasurShomaqsudov, jasurshomaqsudov, Jasurshomaqsudov_jasur, jasur, jasur shomaqsudov, shomaqsudov, front-end developer, Jasurbek Shomaqsudov, jasurbek_shomaqsudov, jasur_shomaqsudov, Jasurbek's Portfolio, jasur shomaqsudov, Jasur Shomaqsudov, Jasurbek Frontend, Jasurbek Frontend Developer, Frontend Developer, jasurbekshomaqsudov, jasurshomaqsudov, shomaqsudovjasurbek, jasurbek shomaqsudov uz, shomaqsudovjasur, shomaqsudov_jasurbek_portfolio, shomaqsudov jasurbek portfolio, jasurbek, Jasurbek, JASURBEK, jasur, Jasur, JASUR, shomaqsudov, Shomaqsudov, SHOMAQSUDOV, j, a, s, u, r, b, e, k, ja, jasu, sho, shomaqsudo, jasur uz, jasuruz, jasurbekuz, shomaqsudov uz, shomaqsudovuz, jasur uzb, jasuruzb, jasurbekuzb, shomaqsudov uzb, shomaqsudovuzb, software engineer, jasur software engineer, jasurbek software engineer, shomaqsudov software engineer, programming, frontend, react developer, web developer, portfolio, HTML, CSS, JavaScript, jQuery, Bootstrap, responsive design, web design, web development, front-end, frontend, Джасурбек Шомаксудов, Джасурбек Шомаксудов, Шомаксудов Джасурбек, Шомаксудов Джасурбек, Шомаксудов Джасурбек фронтенд, Шомаксудов Джасурбек, Шомаксудов Джасур, Джасур, Джасур Шомаксудов, Шомаксудов, Front-end разработчик, Джасурбек Шомаксудов, Портфолио Джасурбека, Джасур Шомаксудов, Отважный Шомаксудов,"
-        />
-        <meta
-          property='og:description'
-          content='Jasurbek Shomaqsudov is a front-end developer who creates responsive and user-friendly websites. See my portfolio and learn more about my skills, experience.'
-        />
-
-        {/* <!-- Twitter Card --> */}
-        <meta name='twitter:title' content='Jasurbek Shomaqsudov - Software Engineer' />
-        <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:image' content='https://shomaqsudov.uz/banner.webp' />
-        <meta name='twitter:url' content='https://shomaqsudov.uz' />
-        <meta
-          name='twitter:description'
-          content='Jasurbek Shomaqsudov is a front-end developer who creates responsive and user-friendly websites. See my portfolio and learn more about my skills, experience.'
-        />
-
-        {/* Schema.org structured data */}
-        <script type='application/ld+json'>
-          {JSON.stringify({
-            '@context': 'http://schema.org',
-            '@type': 'Person',
-            name: 'Jasurbek Shomaqsudov',
-            url: 'https://shomaqsudov.uz',
-            description: 'Jasurbek Shomaqsudov - Software Engineer',
-            image: 'https://shomaqsudov.uz/banner.webp',
-            logo: 'https://shomaqsudov.uz/logo.webp',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Shahriston',
-              addressLocality: 'Tashkent',
-              addressRegion: 'Toshkent Shahri',
-              postalCode: '100100',
-              addressCountry: {
-                '@type': 'Country',
-                name: 'Uzbekistan',
-              },
-            },
-            contactPoint: {
-              '@type': 'ContactPoint',
-              telephone: '+998971052208',
-              contactType: 'Software Engineer',
-            },
-            sameAs: [
-              'https://www.instagram.com/jasurbek_shomaqsudov',
-              'https://t.me/Joni2208',
-              'https://twitter.com/JShomaqsudov',
-              'https://github.com/Jasurbek2208',
-              'https://www.linkedin.com/in/jasurbek-shomaqsudov',
-            ],
-          })}
-        </script>
-
-        {/* Structured data for Breadcrumbs (if applicable) */}
-        <script type='application/ld+json'>
-          {JSON.stringify({
-            '@context': 'http://schema.org',
-            '@type': 'BreadcrumbList',
-            itemListElement: [
-              {
-                '@type': 'ListItem',
-                position: 1,
-                item: {
-                  '@id': 'https://shomaqsudov.uz',
-                  name: 'Jasurbek Shomaqsudov',
-                },
-              },
-            ],
-          })}
-        </script>
-
         <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap' rel='stylesheet' />
-        <meta name='theme-color' content='#141E30' />
-        <link rel='icon' type='image/x-icon' href='https://shomaqsudov.uz/logo.webp' />
-        <link rel='manifest' href='https://shomaqsudov.uz/manifest.json' />
-        <title>Jasurbek Shomaqsudov - Software Engineer</title>
         <link rel='canonical' href='https://shomaqsudov.uz' />
-        <meta
-          name='description'
-          content='Jasurbek Shomaqsudov is a front-end developer who creates responsive and user-friendly websites. See my portfolio and learn more about my skills, experience.'
-        />
-        <meta
-          name='keywords'
-          content="Jasurbek Shomaqsudov, jasurbek shomaqsudov, Shomaqsudov Jasurbek, shomaqsudov jasurbek, shomaqsudov jasurbek frontend, shomaqsudov Jasurbek, shomaqsudov jasur, shomaqsudov, jasurShomaqsudov, JasurShomaqsudov, jasurshomaqsudov, Jasurshomaqsudov_jasur, jasur, jasur shomaqsudov, shomaqsudov, front-end developer, Jasurbek Shomaqsudov, jasurbek_shomaqsudov, jasur_shomaqsudov, Jasurbek's Portfolio, jasur shomaqsudov, Jasur Shomaqsudov, Jasurbek Frontend, Jasurbek Frontend Developer, Frontend Developer, jasurbekshomaqsudov, jasurshomaqsudov, shomaqsudovjasurbek, jasurbek shomaqsudov uz, shomaqsudovjasur, shomaqsudov_jasurbek_portfolio, shomaqsudov jasurbek portfolio, jasurbek, Jasurbek, JASURBEK, jasur, Jasur, JASUR, shomaqsudov, Shomaqsudov, SHOMAQSUDOV, j, a, s, u, r, b, e, k, ja, jasu, sho, shomaqsudo, jasur uz, jasuruz, jasurbekuz, shomaqsudov uz, shomaqsudovuz, jasur uzb, jasuruzb, jasurbekuzb, shomaqsudov uzb, shomaqsudovuzb, software engineer, jasur software engineer, jasurbek software engineer, shomaqsudov software engineer, programming, frontend, react developer, web developer, portfolio, HTML, CSS, JavaScript, jQuery, Bootstrap, responsive design, web design, web development, front-end, frontend, Джасурбек Шомаксудов, Джасурбек Шомаксудов, Шомаксудов Джасурбек, Шомаксудов Джасурбек, Шомаксудов Джасурбек фронтенд, Шомаксудов Джасурбек, Шомаксудов Джасур, Джасур, Джасур Шомаксудов, Шомаксудов, Front-end разработчик, Джасурбек Шомаксудов, Портфолио Джасурбека, Джасур Шомаксудов, Отважный Шомаксудов,"
-        />
 
         <meta name='yandex-verification' content='b95c7f14b897436e' />
         <meta name='google-adsense-account' content='ca-pub-9331562588011655' />
