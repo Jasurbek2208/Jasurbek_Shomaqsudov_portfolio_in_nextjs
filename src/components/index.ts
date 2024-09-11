@@ -1,0 +1,12 @@
+import{default as Hero}from'./hero/Hero'
+import{default as Input}from'./input/Input'
+import{default as Works}from'./works/Works'
+import{default as About}from'./about/About'
+import{default as Navbar}from'./navbar/Navbar'
+import{default as Footer}from'./footer/Footer'
+import{default as Button}from'./button/Button'
+import{default as Loading}from'./loading/Loading'
+import{default as Contact}from'./contact/Contact'
+import{default as OrderModal}from'./orderModal/OrderModal'
+import{default as MatrixLoader}from'./matrixLoader/MatrixLoader'
+export{Hero,Input,Works,About,Navbar,Footer,Button,Loading,Contact,OrderModal,MatrixLoader}
