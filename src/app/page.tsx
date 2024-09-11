@@ -8,7 +8,7 @@ import { Toaster } from 'react-hot-toast'
 import { handleKeyDown } from 'helpers'
 
 // Components
-import { Contact, Hero, Navbar, Works, About, Footer, MatrixLoader } from 'components'
+import { Contact, Hero, Navbar, About, Footer, MatrixLoader } from 'components'
 
 export default function Home() {
   // Disabling dev elements
