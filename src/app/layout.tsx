@@ -13,29 +13,47 @@ export const metadata: Metadata = {
     title: 'Jasurbek Shomaqsudov - Software Engineer',
     description: 'Jasurbek Shomaqsudov is a front-end developer who creates responsive and user-friendly websites. See my portfolio and learn more about my skills, experience.',
     url: 'https://shomaqsudov.uz',
+    countryName: 'Uzbekistan',
+    phoneNumbers: '+998971052208',
+    siteName: 'shomaqsudov.uz',
     images: [
       {
-        url: 'https://shomaqsudov.uz/banner.webp',
+        url: '/banner.webp',
         width: 1200,
         height: 630,
         alt: 'Jasurbek Shomaqsudov Banner',
       },
     ],
     locale: 'en_US',
+    alternateLocale: 'uz_UZ',
     type: 'website',
   },
+  creator: 'Jasurbek Shomaqsudov',
+  classification: 'Software Engineer',
+  icons: { icon: '/logo.webp' },
   applicationName: 'shomaqsudov.uz',
   authors: { name: 'Jasurbek Shomaqsudov', url: 'https://shomaqsudov.uz' },
   category: 'Software engineering',
   twitter: {
     title: 'Jasurbek Shomaqsudov - Software Engineer',
     description: 'Jasurbek Shomaqsudov is a front-end developer who creates responsive and user-friendly websites. See my portfolio and learn more about my skills, experience.',
-    images: 'https://shomaqsudov.uz/banner.webp',
+    images: '/banner.webp',
     card: 'summary_large_image',
+    site: 'https://shomaqsudov.uz',
+    creator: 'Jasurbek Shomaqsudov',
+    creatorId: 'jasurbek_shomaqsudov',
+    siteId: 'shomaqsudov.uz',
   },
   robots: { index: true, follow: true },
-  appleWebApp: { title: 'Jasurbek Shomaqsudov', startupImage: 'https://shomaqsudov.uz/logo.webp' },
+  appleWebApp: { title: 'Jasurbek Shomaqsudov', startupImage: '/logo.webp' },
   themeColor: '#141E30',
+  verification: {
+    google: 'YKNgW6dch-cCV_lEa2PUcyteFd7APTHkNIwYbtH6JXc',
+    yandex: 'b95c7f14b897436e',
+    other: {
+      'google-adsense-account': 'ca-pub-9331562588011655',
+    },
+  },
 }
 
 export default function RootLayout({
@@ -48,10 +66,6 @@ export default function RootLayout({
       <Head>
         <link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap' rel='stylesheet' />
         <link rel='canonical' href='https://shomaqsudov.uz' />
-
-        <meta name='yandex-verification' content='b95c7f14b897436e' />
-        <meta name='google-adsense-account' content='ca-pub-9331562588011655' />
-        <meta name='google-site-verification' content='YKNgW6dch-cCV_lEa2PUcyteFd7APTHkNIwYbtH6JXc' />
 
         <Script strategy='afterInteractive' src='https://www.googletagmanager.com/gtag/js?id=G-V4LQXC2FYF' />
         <Script
@@ -69,8 +83,35 @@ export default function RootLayout({
           }}
         />
       </Head>
+      {/* Yandex Metrika */}
+      <Script
+        id='yandex-metrika'
+        strategy='afterInteractive'
+        dangerouslySetInnerHTML={{
+          __html: `
+              (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();
+              for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+              k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+              ym(96899216, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+              });
+            `,
+        }}
+      />
+
       <body>
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <noscript>
+          <div>
+            <img src='https://mc.yandex.ru/watch/96899216' style={{ position: 'absolute', left: '-9999px' }} alt='' />
+          </div>
+        </noscript>
       </body>
     </html>
   )
